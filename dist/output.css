@@ -422,6 +422,16 @@ video {
   display: none;
 }
 
+:root {
+  --color-primary: 255 115 179;
+  --clr-orange: 25deg 97% 53%;
+  --clr-white: 0deg 0% 100%;
+  --clr-grey-light: 217deg 12% 63%;
+  --clr-grey-medium: 216deg 12% 54%;
+  --clr-blue-dark: 213deg 19% 18%;
+  --clr-blue-very-dark: 216deg 12% 8%;
+}
+
 html {
   font-family: 'Overpass', system-ui, sans-serif;
 }
@@ -525,3 +535,18 @@ html {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.bg-accent {
+  background-color: hsl(var(--clr-orange) / 100%);
+}
+
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+

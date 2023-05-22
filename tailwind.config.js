@@ -1,12 +1,21 @@
+/** @type {import('tailwindcss').Config} */
+
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  content: [],
+  content: [
+    './index.html',
+  ],
   theme: {
-    fontFamily: {
-      'sans': ['Overpass', ...defaultTheme.fontFamily.sans],
-    }
+    extend: {
+      fontFamily: {
+        'sans': ['Overpass', ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        accent: 'hsl(var(--clr-orange) / 100%)',
+        primary: 'rgb(var(--color-primary) / 100%)',
+      },
+    },
   },
-  plugins: [],
-}
+};
 
