@@ -12,10 +12,12 @@ module.exports = {
         'sans': ['Overpass', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        accent: 'hsl(var(--clr-orange) / 100%)',
-        primary: 'rgb(var(--color-primary) / 100%)',
+        'orange': 'hsl(25, 97%, 53%)',
+        'grey-light': 'hsl(217, 12%, 63%)',
+        'grey-medium': 'hsl(216, 12%, 54%)',
+        'blue-dark': 'hsl(213, 19%, 18%)',
+        'blue-very-dark': 'hsl(216, 12%, 8%)',
       },
     },
   },
 };
-
