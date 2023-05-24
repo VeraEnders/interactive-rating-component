@@ -73,3 +73,12 @@
     font-size: 1.75rem;
   }
 }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+}

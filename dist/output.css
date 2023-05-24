@@ -566,16 +566,16 @@ input[type="radio"] {
   margin-bottom: 0.625rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-7 {
   margin-bottom: 1.75rem;
 }
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .inline-block {
@@ -775,32 +775,22 @@ input[type="radio"] {
   }
 }
 
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.hover\:text-orange:hover {
-  --tw-text-opacity: 1;
-  color: rgb(252 118 19 / var(--tw-text-opacity));
+.fade-in.active {
+  opacity: 1;
 }
 
 .hover\:opacity-80:hover {
   opacity: 0.8;
 }
 
-.hover\:opacity-90:hover {
-  opacity: 0.9;
-}
-
 .active\:bg-white:active {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.active\:text-white:active {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .active\:text-orange:active {
