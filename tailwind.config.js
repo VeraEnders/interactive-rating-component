@@ -7,17 +7,28 @@ module.exports = {
     './index.html',
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        'sans': ['Overpass', ...defaultTheme.fontFamily.sans],
-      },
-      colors: {
-        'orange': 'hsl(25, 97%, 53%)',
-        'grey-light': 'hsl(217, 12%, 63%)',
-        'grey-medium': 'hsl(216, 12%, 54%)',
-        'blue-dark': 'hsl(213, 19%, 18%)',
-        'blue-very-dark': 'hsl(216, 12%, 8%)',
-      },
+    fontFamily: {
+      'sans': ['Overpass', ...defaultTheme.fontFamily.sans],
     },
-  },
+    colors: {
+      'white': '#FFFFFF',
+      'orange': '#FC7613',
+      'gray': {
+        900: '#141519',
+        800: '#171E28', // gradient-bottom
+        700: '#202731', // gradient-top
+        600: '#262F38', // bg-icons
+        500: '#9BA2AC',
+      }
+    },
+    extend: {
+      maxWidth: {
+        'xs': '20.313rem',
+        'md': '25.75rem',
+      },
+      borderRadius: {
+        '4xl': '2.25rem',
+      }
+    }
+  }
 };

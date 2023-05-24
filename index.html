@@ -10,58 +10,71 @@
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body class="bg-blue-very-dark text-grey-light">
-  <div data-wrapper class="bg-blue-dark">
-    <img src="./src/images/icon-star.svg" alt="star icon">
-    <h2 class="text-white">How did we do?</h2> 
-    <p>
-      Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
-    </p>
+<body class="bg-gray-900 text-gray-500">
+  <div data-wrapper class="d-flex-center min-h-screen">
+    <div class="max-w-xs px-6 pt-6 pb-8 bg-gradient-to-b from-gray-700 to-gray-800 rounded-2xl transition-all | md:max-w-md md:py-8 md:pl-8 md:pr-9 md:rounded-4xl">
 
-    <form action="#">
-      <div class="rating">
-        <label class="rating__radio-button">
-          <input type="radio" name="rating" value="1">
-          <span>1</span>
-        </label>
-        
-        <label class="rating__radio-button">
-          <input type="radio" name="rating" value="2">
-          <span>2</span>
-        </label>
-          
-        <label class="rating__radio-button">
-          <input type="radio" name="rating" value="3">
-          <span>3</span>
-        </label>
-        
-        <label class="rating__radio-button">
-          <input type="radio" name="rating" value="4">
-          <span>4</span>
-        </label>
-        
-        <label class="rating__radio-button">
-          <input type="radio" name="rating" value="5">
-          <span>5</span>
-        </label>
+     <!-- Rating state start -->
+      <div class="inline-block p-3 bg-gray-600 rounded-4xl | md:p-4">
+        <img src="./src/images/icon-star.svg" alt="star icon">
       </div>
 
-      <button type="rating__submit">Submit</button>
-    </form>
+      <h2 class="rating__title | md:mt-5">How did we do?</h2> 
+      <p class="mb-7 text-sm/[1.375rem] | md:text-[0.938rem]/6">
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+      </p>
 
+      <form action="#">
+        <div data-rating class="flex justify-between my-3">
+          <label class="rating__radio-button">
+            <input type="radio" name="rating" value="1">
+            <span class="d-flex-center">1</span>
+          </label>
+          
+          <label class="rating__radio-button">
+            <input type="radio" name="rating" value="2">
+            <span class="d-flex-center">2</span>
+          </label>
+            
+          <label class="rating__radio-button">
+            <input type="radio" name="rating" value="3">
+            <span class="d-flex-center">3</span>
+          </label>
+          
+          <label class="rating__radio-button">
+            <input type="radio" name="rating" value="4">
+            <span class="d-flex-center">4</span>
+          </label>
+          
+          <label class="rating__radio-button">
+            <input type="radio" name="rating" value="5">
+            <span class="d-flex-center">5</span>
+          </label>
+        </div>
+
+        <button class="w-full mt-3 py-[0.7rem] bg-orange font-bold text-white uppercase tracking-widest rounded-3xl hover:opacity-80 active:text-orange active:bg-white active:opacity-100 transition-all | md:mt-5" type="submit">
+          Submit
+        </button>
+      </form>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start --> 
+      <template>
+        <div class="text-center">
+          <img class="mx-auto mt-3 mb-2.5" src="./src/images/illustration-thank-you.svg" alt="illustration">
+          <p class="inline-block my-5 px-4 py-1.5 bg-gray-600 rounded-2xl text-orange opacity-70"> You selected 4 out of 5</p>
+      
+          <h2 class="rating__title">Thank you!</h2>
+          <p class="mb-4 text-sm/[1.375rem] | md:text-[0.938rem]/6">
+            We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to 
+            <br> get in touch!
+          </p>
+        </div>
+      </template>
+    <!-- Thank you state end -->
+    </div>
   </div>
-
-  <template>
-    <img src="./src/images/illustration-thank-you.svg" alt="illustration">
-    
-    <p> You selected <!-- rating result --> out of 5</p>
-
-    <h2>Thank you!</h2>
-    <p>
-      We appreciate you taking the time to give a rating. If you ever need more support, 
-      don’t hesitate to get in touch!
-    </p>
-  </template>
   
   <script src="./src/index.js"></script>
 </body>
