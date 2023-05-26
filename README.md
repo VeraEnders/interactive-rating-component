@@ -1,7 +1,7 @@
 <h1 align="center">Interactive Rating Component</h1>
 
-<div style="max-width:500px; margin-inline: auto;">
-  <img src="./src/images/preview-component.png" alt="Preview Component">
+<div style="max-width:60%; margin-inline: auto;">
+  <img src="./src/images/preview-rating-submission.gif" alt="Rating Submission preview">
 </div>
 
 <div align="center">
@@ -34,9 +34,9 @@ Users should be able to:
 Users can select select and submit a number rating. 
 After submitting a rating, the component dynamically updates the display to show a "Thank you" card state. It replaces the existing content with a new element created from the provided template. 
 
-<div align="center">
-  <img src="./src/images/preview-rating-submission.gif" alt="Rating Submission preview" style="max-width:60%;">
-</div>
+| Rating State | Thank you State |
+| --- | --- |
+| ![Rating state](./src/images/preview-component.png)  | ![Mobile](./src/images/preview-thank-you-state.png) |
 
 ### Responsive Design
 
