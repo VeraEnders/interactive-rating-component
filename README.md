@@ -1,6 +1,6 @@
 <h1 align="center">Interactive Rating Component</h1>
 
-<div style="max-width:60%; margin-inline: auto;">
+<div align="center">
   <img src="./src/images/preview-rating-submission.gif" alt="Rating Submission preview">
 </div>
 
